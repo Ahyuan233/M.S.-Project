@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual has-default-focus js-focus-visible theme-light" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="true" data-target="docs" x-ms-format-detection="none" data-js-focus-visible="" lang="en-us"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Azure Kinect DK hardware specifications">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification">
+			<meta property="og:description" content="Understand the components, specifications, and capabilities of the Azure Kinect DK.">
+
+	<meta property="og:image" content="https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png">
+
+	<meta property="og:image:alt" content="Microsoft Logo">
+
+	<meta name="twitter:card" content="summary">
+
+	<meta name="twitter:site" content="@docsmsft">
+
+	<meta name="color-scheme" content="light dark">
+
+
+	<meta name="audience" content="ITPro">
+<meta name="author" content="qm13">
+<meta name="breadcrumb_path" content="/azure/bread/toc.json">
+<meta name="depot_name" content="Azure.azure-documents">
+<meta name="description" content="Understand the components, specifications, and capabilities of the Azure Kinect DK.">
+<meta name="document_id" content="a69b3704-f4a2-cd9d-6125-5b3eb50bd351">
+<meta name="document_version_independent_id" content="a0b9cae2-0c73-7350-d0b1-fb7f4408388d">
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/596b5b0c6ce070aa91b17d3a12df1066a59aff80/articles/kinect-dk/hardware-specification.md">
+<meta name="keywords" content="azure, kinect, specs, hardware, DK, capabilities, depth, color, RGB, IMU, microphone, array, depth">
+<meta name="learn_banner_products" content="azure">
+<meta name="locale" content="en-us">
+<meta name="manager" content="dcscontentpm">
+<meta name="ms.author" content="quentinm">
+<meta name="ms.custom" content="CI 114092, CSSTroubleshooting">
+<meta name="ms.date" content="03/18/2021">
+<meta name="ms.service" content="azure-kinect-developer-kit">
+<meta name="ms.suite" content="office">
+<meta name="ms.topic" content="article">
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/kinect-dk/hardware-specification.md">
+<meta name="page_type" content="conceptual">
+<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/Azure.azure-documents/{branchName}{pdfName}">
+<meta name="recommendation_types" content="Training">
+<meta name="recommendation_types" content="Certification">
+<meta name="recommendations" content="true">
+<meta name="schema" content="Conceptual">
+<meta name="site_name" content="Docs">
+<meta name="toc_rel" content="toc.json">
+<meta name="uhfHeaderId" content="azure">
+<meta name="updated_at" content="2022-09-02 05:04 PM">
+<meta name="word_count" content="1550">
+
+
+
+
+	<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/b84c534b-d73d-4cc0-8bd0-76bc2aedeb50" data-source="generated">
+
+	<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated">
+
+	
+
+	<meta name="scope" content="Azure">
+	<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/kinect-dk/hardware-specification.md">
+<link href="https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification" rel="canonical">
+	<title>Azure Kinect DK hardware specifications | Microsoft Learn</title>
+
+		<link rel="stylesheet" href="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/aeed2be4.site-ltr.css">
+
+	
+
+	<script id="msdocs-script">
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: 'azure',
+			context: {
+			},
+			hasBinaryRating: true,
+			hasGithubIssues: true,
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/azure-docs',
+			feedbackProductUrl: 'https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4',
+			extendBreadcrumb: false,
+			isEditDisplayable: true,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: true,
+			hasBookmark: true,
+			hasShare: true,
+			isPermissioned: false,
+			hasRecommendations: true,
+			contributors: [
+						{ name: "qm13", url: "https://github.com/qm13" },
+						{ name: "v-alje", url: "https://github.com/v-alje" },
+						{ name: "alexbuckgit", url: "https://github.com/alexbuckgit" },
+						{ name: "DCtheGeek", url: "https://github.com/DCtheGeek" },
+						{ name: "tesych", url: "https://github.com/tesych" },
+						{ name: "v-maudel", url: "https://github.com/v-maudel" },
+						{ name: "Teresa-Motiv", url: "https://github.com/Teresa-Motiv" },
+						{ name: "philmea", url: "https://github.com/philmea" },
+						{ name: "Eveldrana", url: "https://github.com/Eveldrana" },
+						{ name: "rabbitdaxi", url: "https://github.com/rabbitdaxi" },
+						{ name: "Brent-A", url: "https://github.com/Brent-A" },
+						{ name: "PRMerger12", url: "https://github.com/PRMerger12" }
+],
+		},
+		functions:{}
+	};
+	</script>
+	<script src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/wcp-consent.js"></script>
+	<script src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/ms.jsll-3.min.js"></script>
+
+	<script src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/67a45209.deprecation.js"></script>
+		<script src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/4b524b8e.index-docs.js"></script><style></style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"name":"Learn","position":1,"@type":"ListItem","item":"https://learn.microsoft.com/en-us/"},{"name":"Azure","position":2,"@type":"ListItem","item":"https://learn.microsoft.com/en-us/azure/"},{"name":"Azure Kinect DK","position":3,"@type":"ListItem","item":"https://learn.microsoft.com/en-us/azure/kinect-dk/"}]}</script></head>
+
+<body dir="ltr" lang="en-us">
+	<div class="header-holder has-default-focus">
+		<a href="#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused position-fixed has-inner-focus focus-visible top-0 left-0 right-0 padding-xs has-text-centered has-body-background" tabindex="1">Skip to main content</a>
+
+		<div id="cookie-consent-holder" hidden=""></div>
+
+		<div id="unsupported-browser" style="
+			background-color: white;
+			color: black;
+			padding: 16px;
+			border-bottom: 1px solid grey;" hidden="">
+			<div style="max-width: 800px; margin: 0 auto;">
+				<p style="font-size: 24px">This browser is no longer supported.</p>
+				<p style="font-size: 16px; margin-top: 16px;">Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.</p>
+				<div style="margin-top: 12px;">
+					<a href="https://go.microsoft.com/fwlink/p/?LinkID=2092881" style="
+						background-color: #0078d4;
+						border: 1px solid #0078d4;
+						color: white;
+						padding: 6px 12px;
+						border-radius: 2px;
+						display: inline-block;
+						">
+Download Microsoft Edge					</a>
+					<a href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge" style="
+							background-color: white;
+							padding: 6px 12px;
+							border: 1px solid #505050;
+							color: #171717;
+							border-radius: 2px;
+							display: inline-block;
+							">
+More info about Internet Explorer and Microsoft Edge					</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- liquid-tag banners global -->
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization"><!----> <div class="nav-bar"><!----> <div class="nav-bar-brand display-flex align-items-center padding-none margin-left-xs margin-left-none-tablet">
+		
+					<a class="nav-bar-button" itemprop="url" href="https://www.microsoft.com/" aria-label="Microsoft">
+						 <div class="nav-bar-logo" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope">
+				
+		<svg xmlns="http://www.w3.org/2000/svg" width="108" height="23" viewBox="72 72 337 74" preserveAspectRatio="xMidYMin slice">
+			<g data-name="MS-symbol">
+				<clipPath>
+					<path transform="matrix(1 0 0 -1 0 216)" d="M0 216h482V0H0z"></path>
+				</clipPath>
+				<g clip-path="url(#a)">
+					<path d="M394.942 104.59h-10.858v25.003h-7.38V104.59h-5.182v-5.965h5.182v-4.308c0-3.254 1.06-5.92 3.178-7.998 2.12-2.079 4.835-3.118 8.15-3.118.882 0 1.666.045 2.35.135a9.37 9.37 0 011.806.407v6.296c-.24-.14-.663-.31-1.265-.512-.603-.2-1.296-.3-2.078-.3-1.528 0-2.702.476-3.526 1.43-.824.954-1.235 2.365-1.235 4.232v3.736h10.858v-6.959l7.321-2.229v9.188h7.381v5.965h-7.38v14.49c0 1.91.345 3.254 1.038 4.037.693.783 1.782 1.175 3.27 1.175.42 0 .927-.1 1.52-.3a7.178 7.178 0 001.552-.724v6.025c-.463.261-1.23.502-2.305.723a15.742 15.742 0 01-3.178.331c-3.073 0-5.378-.817-6.914-2.455-1.537-1.637-2.305-4.102-2.305-7.396zm-48.407 9.73c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.45-2.545-6.04-2.545-2.67 0-4.745.888-6.22 2.666-1.477 1.777-2.215 4.313-2.215 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.892-2.993 6.91-4.489 12.05-4.489 4.841 0 8.621 1.441 11.343 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.447 9.018-4.338 11.99-2.892 2.973-6.829 4.458-11.81 4.458-4.8 0-8.61-1.41-11.432-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-16.417-7.802c0 1.045.331 1.863.994 2.456.662.592 2.128 1.34 4.398 2.243 2.912 1.166 4.956 2.476 6.131 3.932 1.175 1.456 1.762 3.22 1.762 5.287 0 2.912-1.12 5.252-3.359 7.02-2.24 1.767-5.267 2.65-9.083 2.65-1.285 0-2.706-.155-4.263-.467-1.556-.31-2.877-.707-3.96-1.19v-7.169a17.945 17.945 0 004.277 2.198c1.526.543 2.911.814 4.157.814 1.647 0 2.862-.23 3.645-.693.784-.46 1.175-1.235 1.175-2.319 0-1.005-.406-1.853-1.22-2.546-.813-.693-2.355-1.492-4.624-2.395-2.69-1.125-4.599-2.39-5.724-3.796-1.125-1.406-1.687-3.193-1.687-5.362 0-2.792 1.11-5.086 3.33-6.884 2.217-1.797 5.095-2.696 8.63-2.696 1.084 0 2.3.12 3.645.361 1.346.242 2.47.553 3.374.934v6.93c-.964-.644-2.089-1.195-3.374-1.658-1.286-.462-2.56-.693-3.826-.693-1.386 0-2.465.271-3.238.813-.774.543-1.16 1.286-1.16 2.23m-35.066 7.562c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.449-2.545-6.039-2.545-2.672 0-4.745.888-6.222 2.666-1.476 1.777-2.214 4.313-2.214 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.893-2.993 6.91-4.489 12.051-4.489 4.84 0 8.621 1.441 11.342 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.446 9.018-4.338 11.99-2.892 2.973-6.828 4.458-11.809 4.458-4.8 0-8.61-1.41-11.433-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-3.136-16.448c.582 0 1.105.041 1.567.121.462.08.853.18 1.175.301v7.38c-.382-.28-.939-.546-1.672-.798-.733-.25-1.622-.376-2.666-.376-1.788 0-3.299.753-4.534 2.26-1.235 1.505-1.853 3.825-1.853 6.958v15.635h-7.29V98.624h7.29v4.88h.12c.663-1.687 1.667-3.007 3.013-3.96 1.346-.954 2.962-1.432 4.85-1.432m-27.956 26.18c1.084 0 2.28-.25 3.585-.754a15.06 15.06 0 003.615-1.988v6.778c-1.165.663-2.485 1.165-3.962 1.506-1.475.342-3.098.512-4.865.512-4.559 0-8.265-1.44-11.116-4.323-2.852-2.88-4.278-6.562-4.278-11.04 0-4.98 1.456-9.083 4.37-12.307 2.91-3.224 7.037-4.835 12.38-4.835 1.366 0 2.746.176 4.143.527 1.395.352 2.504.758 3.328 1.22v6.99c-1.125-.824-2.274-1.462-3.45-1.914a9.966 9.966 0 00-3.599-.678c-2.872 0-5.192.934-6.959 2.802-1.768 1.868-2.652 4.388-2.652 7.562 0 3.132.85 5.573 2.546 7.32 1.697 1.748 4.002 2.621 6.914 2.621m-22.112 5.302h-7.29V98.624h7.29zm-8.044-39.916c0-1.205.437-2.214 1.311-3.028.874-.813 1.913-1.22 3.118-1.22 1.285 0 2.35.417 3.193 1.25.844.834 1.266 1.833 1.266 2.998 0 1.185-.432 2.18-1.296 2.982-.864.804-1.918 1.205-3.163 1.205-1.246 0-2.295-.406-3.148-1.219-.854-.815-1.28-1.803-1.28-2.968m-6.274-3.284v43.2h-7.5v-33.86h-.12l-13.408 33.86h-4.97l-13.738-33.86h-.09v33.86h-6.929v-43.2h10.755l12.412 32.024h.18l13.105-32.024z" class="fill-current-color fill-link-text-forced-colors color-text-subtle"></path>
+					<path d="M106.214 106.214H71.996V71.996h34.218z" fill="#f25022"></path>
+					<path d="M143.993 106.214h-34.218V71.996h34.218z" fill="#7fba00"></path>
+					<path d="M106.214 143.993H71.996v-34.218h34.218z" fill="#00a4ef"></path>
+					<path d="M143.993 143.993h-34.218v-34.218h34.218z" fill="#ffb900"></path>
+				</g>
+			</g>
+		</svg>
+	
+		  </div>
+					</a>
+			  
+	</div> 
+				
+		<div class="nav-bar-item is-hidden-tablet">
+			<div class="nav-bar-menu">
+				<button class="nav-bar-button is-title" title="Global navigation" aria-expanded="false">
+					<span class="nav-bar-menu-title"><!---->Documentation<!----></span>
+					<div class="nav-bar-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="nav-bar-burger-label"><!---->Global navigation<!----></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	
+				
+		<nav class="nav-bar-nav" role="navigation" aria-label="Global">
+			<ul class="nav-bar-nav-list">
+				
+		<li class="nav-bar-item is-category">
+			<a class="nav-bar-button is-title has-hover-underline" itemprop="url" href="https://learn.microsoft.com/en-us/">
+				<span><!---->Learn<!----></span>
+			</a>
+		</li>
+	
+				<!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline is-active" href="https://learn.microsoft.com/en-us/docs/">
+						<span><!---->Documentation<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline " href="https://learn.microsoft.com/en-us/training/">
+						<span><!---->Training<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline " href="https://learn.microsoft.com/en-us/certifications/">
+						<span><!---->Certifications<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline " href="https://learn.microsoft.com/en-us/answers/products/">
+						<span><!---->Q&amp;A<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline " href="https://learn.microsoft.com/en-us/samples/browse/">
+						<span><!---->Code Samples<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline " href="https://learn.microsoft.com/en-us/shows/">
+						<span><!---->Shows<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class=" nav-bar-button has-hover-underline " href="https://learn.microsoft.com/en-us/events/">
+						<span><!---->Events<!----></span>
+					</a>
+				</li>
+		  <!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-178">
+			<span><!---->More<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-178" aria-label="More">
+			<!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button is-active" href="https://learn.microsoft.com/en-us/docs/">
+						Documentation
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://learn.microsoft.com/en-us/training/">
+						Training
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://learn.microsoft.com/en-us/certifications/">
+						Certifications
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://learn.microsoft.com/en-us/answers/products/">
+						Q&amp;A
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://learn.microsoft.com/en-us/samples/browse/">
+						Code Samples
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://learn.microsoft.com/en-us/shows/">
+						Shows
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://learn.microsoft.com/en-us/events/">
+						Events
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+				<span class="nav-bar-spacer"></span>
+				
+		<div class="nav-bar-search " id="ax-179" hidden="">
+			
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form" aria-label="Search" action="/en-us/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!---->
+			<div class="field-body control ">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input" class="autocomplete-input input input-sm
+						
+						" type="search" name="terms" aria-expanded="false" aria-owns="ax-180-listbox" aria-controls="ax-180-listbox" aria-activedescendant="" aria-label="Search" placeholder="Search" pattern=".*">
+
+				<span aria-hidden="true" class="icon is-small is-left" hidden="">
+					<span class="has-text-primary docon docon-undefined"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul role="listbox" id="ax-180-listbox" class="autocomplete-suggestions is-vertically-scrollable padding-xs " aria-label="site-search-input-suggestions" hidden="">
+				
+				
+			</ul>
+		<!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="">
+			<input name="scope" value="Azure" hidden="">
+			
+			
+		</form>
+	
+		</div>
+		
+					<div class="nav-bar-search">
+						<!-- hidden when the width drops to tablet -->
+						
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form-desktop" aria-label="Search" action="/en-us/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!---->
+			<div class="field-body control has-icons-left">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-181" class="autocomplete-input input input-sm
+						control has-icons-left
+						" type="search" name="terms" aria-expanded="false" aria-owns="ax-182-listbox" aria-controls="ax-182-listbox" aria-activedescendant="" aria-label="Search" placeholder="Search" pattern=".*">
+
+				<span aria-hidden="true" class="icon is-small is-left">
+					<span class="has-text-primary docon docon-search"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul role="listbox" id="ax-182-listbox" class="autocomplete-suggestions is-vertically-scrollable padding-xs " aria-label="ax-181-suggestions" hidden="">
+				
+				
+			</ul>
+		<!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="">
+			<input name="scope" value="Azure" hidden="">
+			
+			
+		</form>
+	
+					</div>
+			  
+		<div class="nav-bar-search " hidden="">
+			<div class="nav-bar-search-form-expander">
+				<button id="form-expander" class="nav-bar-button has-hover-underline " title="Search" aria-expanded="false" aria-controls="ax-179">
+					
+		<span class="is-visually-hidden-mobile"><!---->Search<!----></span>
+		<span class="icon margin-left-xxs" aria-hidden="true">
+			<span class="docon docon-search"></span>
+		</span>
+	
+				</button>
+			</div>
+		</div>
+	
+				
+		<div class="nav-bar-profile">
+			
+		<a class="docs-sign-in auth-status-determined not-authenticated" href="#"> Sign in </a>
+	 
+		<div class="dropdown has-caret auth-status-determined authenticated">
+			<button class="dropdown-trigger button-reset" aria-controls="user-menu" aria-expanded="false" aria-label="Your Account">
+				<figure class="image is-36x36">
+					<img class="has-body-background-medium border-radius-rounded" alt="" data-profile-property="avatarUrl">
+				</figure>
+			</button>
+			<div class="dropdown-menu box justify-content-flex-start has-body-background" id="user-menu" role="menu">
+				<div class="media is-user-dir">
+					<div class="media-left">
+						<figure class="image is-48x48" aria-hidden="true">
+							<img class="has-body-background-medium border-radius-rounded" aria-labelledby="displayName" alt="" data-profile-property="avatarUrl">
+						</figure>
+					</div>
+					<div class="media-content">
+						<h2 class="title font-size-lg">
+							<span id="displayName" class="is-inline-truncated has-max-width-200" data-profile-property="displayName"></span>
+						</h2>
+						<p class="subtitle font-size-sm margin-bottom-none">
+							<span class="is-inline-truncated has-max-width-200" data-profile-property="upn"></span>
+						</p>
+					</div>
+				</div>
+				<ul class="padding-top-xs padding-bottom-xs">
+					<li class="padding-bottom-xs">
+						<a data-profile-property="profileUrl" href="https://learn.microsoft.com/en-us/users/me/activity/"><!---->Profile<!----></a>
+					</li>
+					<li>
+						<a data-profile-property="settingsUrl" href="https://learn.microsoft.com/en-us/users/me/settings/"><!---->Settings<!----></a>
+					</li>
+				</ul>
+				<div class="border-top padding-top-xs">
+					<a class="docs-sign-out" href="#"><!---->Sign out<!----></a>
+				</div>
+			</div>
+		</div>
+	
+		</div>
+	
+			 <!----></div> <div class="nav-bar border-top is-hidden-mobile"><!----> 
+		<a class="nav-bar-button is-title has-hover-underline" itemprop="url" href="https://learn.microsoft.com/en-us/azure/">
+			<span>
+				Azure
+				
+			</span>
+		</a>
+	 
+		
+		<nav class="nav-bar-nav" role="navigation" aria-label="Site">
+			<ul class="nav-bar-nav-list">
+				
+				<!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-183">
+			<span><!---->Product documentation<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-183" aria-label="Product documentation">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=compute">
+						Compute
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=networking">
+						Networking
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=storage">
+						Storage
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=web">
+						Web
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=mobile">
+						Mobile
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=containers">
+						Containers
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=databases">
+						Databases
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/">
+						All products
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-184">
+			<span><!---->Architecture<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-184" aria-label="Architecture">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/guide/">
+						Get started
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/browse/">
+						Reference architectures
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/">
+						Cloud Adoption Framework for Azure
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/framework/">
+						Azure Well-Architected Framework
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/patterns/">
+						Design patterns
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/assessments/">
+						Assessments
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-185">
+			<span><!---->Learn Azure<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-185" aria-label="Learn Azure">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/training/azure/">
+						Self-paced learning paths
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://go.microsoft.com/fwlink/?linkid=2012831">
+						Pluralsight
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/training/courses/browse/?products=azure">
+						Instructor-led courses
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-186">
+			<span><!---->Develop<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-186" aria-label="Develop">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/python/">
+						Python
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/dotnet/azure/">
+						.NET
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/javascript/">
+						JavaScript
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/java/">
+						Java
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/go/">
+						Go
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-187">
+			<span><!---->Resources<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-187" aria-label="Resources">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/pricing/">
+						Pricing
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/overview/sales-number/">
+						Contact sales
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/resources/videos/home/">
+						Videos
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/overview/webinars/">
+						Webinars
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/updates/">
+						Updates
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/resources/whitepapers/">
+						White papers
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/blog/">
+						Blog
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/support/options/">
+						Support
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-188">
+			<span><!---->More<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-188" aria-label="More">
+			<!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-189">
+			<span><!---->Product documentation<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-189" aria-label="Product documentation">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=compute">
+						Compute
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=networking">
+						Networking
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=storage">
+						Storage
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=web">
+						Web
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=mobile">
+						Mobile
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=containers">
+						Containers
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/?product=databases">
+						Databases
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/">
+						All products
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-190">
+			<span><!---->Architecture<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-190" aria-label="Architecture">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/guide/">
+						Get started
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/browse/">
+						Reference architectures
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/">
+						Cloud Adoption Framework for Azure
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/framework/">
+						Azure Well-Architected Framework
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/architecture/patterns/">
+						Design patterns
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/assessments/">
+						Assessments
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-191">
+			<span><!---->Learn Azure<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-191" aria-label="Learn Azure">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/training/azure/">
+						Self-paced learning paths
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://go.microsoft.com/fwlink/?linkid=2012831">
+						Pluralsight
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/training/courses/browse/?products=azure">
+						Instructor-led courses
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-192">
+			<span><!---->Develop<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-192" aria-label="Develop">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/python/">
+						Python
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/dotnet/azure/">
+						.NET
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/javascript/">
+						JavaScript
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/java/">
+						Java
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/en-us/azure/developer/go/">
+						Go
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-193">
+			<span><!---->Resources<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-193" aria-label="Resources">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/pricing/">
+						Pricing
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/overview/sales-number/">
+						Contact sales
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/resources/videos/home/">
+						Videos
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/overview/webinars/">
+						Webinars
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/updates/">
+						Updates
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/resources/whitepapers/">
+						White papers
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/blog/">
+						Blog
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://azure.microsoft.com/support/options/">
+						Support
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+		<span class="nav-bar-spacer"></span>
+		
+		<ol class="nav-bar-list">
+			
+		<li class="nav-bar-item has-spacing">
+			<a class="button button-sm button-primary " href="https://portal.azure.com/">
+				Portal
+			</a>
+		</li>
+	 
+		<li class="nav-bar-item ">
+			<a class="button button-sm button-primary button-filled" href="https://azure.microsoft.com/free/">
+				Free account
+			</a>
+		</li>
+	
+		</ol>
+	 
+	 <!----></div> <!----></header>		</div>
+
+
+			<div id="content-header" class="content-header uhf-container has-padding has-default-focus border-bottom-none" data-bi-name="content-header">
+				<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+					<button type="button" class="contents-button button button-sm margin-right-xxs" data-bi-name="contents-expand" aria-haspopup="true" data-contents-button="">
+						<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+						<span class="contents-expand-title">
+Table of contents						</span>
+					</button>
+					<button type="button" class="ap-collapse-behavior ap-expanded button button-sm" data-bi-name="ap-collapse" aria-controls="action-panel">
+						<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+						<span>Exit focus mode</span>
+					</button>
+				</div>
+			</div>
+
+		<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus">
+			<!-- liquid-tag banners sectional -->
+		</div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile ">
+
+			<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+				<nav id="affixed-left-container" class="margin-top-sm-tablet position-fixed display-flex flex-direction-column" role="navigation" aria-label="Primary" style="width: 406px; top: 24px; bottom: 24px;" data-bi-name="left toc"><form action="javascript:" role="search" aria-label="Search" class="margin-bottom-xxs"><label class="visually-hidden" for="ax-128">Search</label><div class="autocomplete display-block" data-bi-name="autocomplete"><!---->
+			<div class="field-body control has-icons-left">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-128" class="autocomplete-input input input-sm
+						control has-icons-left
+						width-full" type="text" aria-expanded="false" aria-owns="ax-129-listbox" aria-controls="ax-129-listbox" aria-activedescendant="" placeholder="Filter by title" pattern=".*">
+
+				<span aria-hidden="true" class="icon is-small is-left">
+					<span class="has-text-primary docon docon-filter-settings"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul role="listbox" id="ax-129-listbox" class="autocomplete-suggestions is-vertically-scrollable padding-xs " aria-label="ax-128-suggestions" hidden="">
+				
+				
+			</ul>
+		<!----></div></form><ul class="tree table-of-contents is-vertically-scrollable flex-grow-1 flex-shrink-1" role="tree" aria-label="Table of contents" data-bi-name="tree" data-is-collapsible="true"><li role="none"><a aria-setsize="8" aria-level="1" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/">Azure Kinect DK documentation</a></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="2" role="treeitem" tabindex="-1" id="title-2-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Overview</span></li><li class="tree-item is-expanded" aria-setsize="8" aria-level="1" aria-posinset="3" role="treeitem" tabindex="-1" id="title-3-1" aria-expanded="true"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Quickstarts</span><ul class="tree-group" role="group"><li role="none"><a aria-setsize="5" aria-level="2" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/set-up-azure-kinect-dk">Set up Azure Kinect DK</a></li><li role="none"><a aria-setsize="5" aria-level="2" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/record-sensor-streams-file">Record sensor streams to a file</a></li><li role="none"><a aria-setsize="5" aria-level="2" aria-posinset="3" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/build-first-app">Build your first application</a></li><li role="none"><a aria-setsize="5" aria-level="2" aria-posinset="4" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-setup">Set up Body Tracking SDK</a></li><li role="none"><a aria-setsize="5" aria-level="2" aria-posinset="5" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/build-first-body-app">Build your first body tracking application</a></li></ul></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="4" role="treeitem" tabindex="-1" id="title-4-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Concepts</span></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="5" role="treeitem" tabindex="-1" id="title-5-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>How-to guides</span></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="6" role="treeitem" tabindex="-1" id="title-6-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Tools</span></li><li class="tree-item is-expanded" aria-setsize="8" aria-level="1" aria-posinset="7" role="treeitem" tabindex="-1" id="title-7-1" aria-expanded="true"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Resources</span><ul class="tree-group" role="group"><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/sensor-sdk-download">Download the Sensor SDK</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-download">Download the Body Tracking SDK</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="3" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/system-requirements">System requirements</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="4" role="treeitem" tabindex="0" class="tree-item is-leaf has-external-link-indicator is-selected" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification" aria-current="page">Hardware specification</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="5" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/multi-camera-sync">Synchronize multiple devices</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="6" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/windows-comparison">Compare to Kinect for Windows</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="7" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/reset-azure-kinect-dk">Reset Azure Kinect DK</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="8" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/support">Azure Kinect support</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="9" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/azure/kinect-dk/troubleshooting">Azure Kinect troubleshooting</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="10" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device">Warranties, extended service plans, and Terms &amp; Conditions</a></li><li role="none"><a aria-setsize="11" aria-level="2" aria-posinset="11" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://support.microsoft.com/help/4023454/safety-information">Safety information</a></li></ul></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="8" role="treeitem" tabindex="-1" id="title-8-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>References</span></li></ul><a href="https://learn.microsoft.com/en-us/azure/opbuildpdf/kinect-dk/toc.pdf?branch=live" class="button button-sm button-clear justify-content-flex-start has-inner-focus margin-top-xxs border-top border-bottom flex-shrink-0" data-bi-name="download-pdf" rel="nofollow"><!----> <span class="icon font-size-xs has-text-subtle">
+				<span aria-hidden="true" class="docon docon-dictionary-download"></span>
+			</span>
+			<span><!---->Download PDF<!----></span><!----></a></nav>
+			</div>
+
+			<!-- .primary-holder -->
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<!--div.columns -->
+				<div class="columns is-gapless-mobile has-large-gaps ">
+
+
+					<div id="main-column" class="column  is-full is-8-desktop">
+
+						<main id="main" role="main" data-bi-name="content" dir="ltr" lang="en-us">
+							<!-- article-header -->
+							<div id="article-header" class="background-color-body margin-top-sm-tablet margin-bottom-xs display-none-print">
+								<div class="display-flex align-items-center ">
+									<details id="article-header-breadcrumbs-overflow-popover" class="popover" data-for="article-header-breadcrumbs" hidden="">
+										<summary class="button button-clear button-primary button-sm" aria-label="All breadcrumbs">
+											<span class="icon">
+												<span class="docon docon-more"></span>
+											</span>
+										</summary>
+										<div id="article-header-breadcrumbs-overflow" class="popover-content padding-none"><!---->
+			<nav>
+				<ol class="list-style-none">
+					<!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/en-us/">
+										Learn
+									</a>
+								</li>
+							<!----><!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/en-us/azure/">
+										Azure
+									</a>
+								</li>
+							<!----><!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/en-us/azure/kinect-dk/">
+										Azure Kinect DK
+									</a>
+								</li>
+							<!---->
+				</ol>
+			</nav>
+			
+		<!----></div>
+									</details>
+									<bread-crumbs id="article-header-breadcrumbs" class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop" style="display: block; white-space: nowrap; overflow: hidden;"><!---->
+			<nav>
+				<ol class="breadcrumbs">
+					<!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="">
+									<a href="https://learn.microsoft.com/en-us/"><!---->Learn<!----></a>
+								</li>
+							<!----><!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="">
+									<a href="https://learn.microsoft.com/en-us/azure/"><!---->Azure<!----></a>
+								</li>
+							<!----><!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="" style="">
+									<a href="https://learn.microsoft.com/en-us/azure/kinect-dk/" style=""><!---->Azure Kinect DK<!----></a>
+								</li>
+							<!---->
+				</ol>
+			</nav>
+		<!----></bread-crumbs>
+
+									<div id="article-header-page-actions" class="margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch">
+
+										<a id="lang-link-tablet" class="button button-primary button-clear button-sm display-none display-inline-flex-tablet" title="Read in English" data-bi-name="language-toggle" data-read-in-link="" href="https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification" data-bi="{&quot;cN&quot;:&quot;language-toggle&quot;,&quot;value&quot;:&quot;off&quot;}" hidden="">
+											<span class="icon margin-none" aria-hidden="true" data-read-in-link-icon="">
+												<span class="docon docon-locale-globe"></span>
+											</span>
+											<span class="is-visually-hidden" data-read-in-link-text="">Read in English</span>
+										</a>
+
+											<button type="button" class="collection button button-clear button-sm button-primary display-none display-inline-flex-tablet" data-list-type="collection" data-bi-name="collection" title="Add Azure Kinect DK hardware specifications | Microsoft Learn to a collection" data-pressed="false">
+												<span class="icon margin-none" aria-hidden="true">
+													<span class="docon docon-circle-addition"></span>
+												</span>
+												<span class="collection-status is-visually-hidden">Save</span>
+											</button>
+										
+
+											<a data-contenteditbtn="" class="button button-clear button-sm text-decoration-none button-primary display-none display-inline-flex-tablet" aria-label="Edit" title="Edit This Document" data-bi-name="edit" href="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/kinect-dk/hardware-specification.md" data-original_content_git_url="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/kinect-dk/hardware-specification.md" data-original_content_git_url_template="{repo}/blob/{branch}/articles/kinect-dk/hardware-specification.md" data-pr_repo="" data-pr_branch="">
+												<span class="icon margin-none" aria-hidden="true">
+													<span class="docon docon-edit-outline"></span>
+												</span>
+											</a>
+										
+
+
+										
+										<details class="popover popover-right" id="article-header-page-actions-overflow">
+											<summary class="justify-content-flex-start button button-clear button-sm button-primary" aria-label="More actions">
+												<span class="icon" aria-hidden="true">
+													<span class="docon docon-more-vertical"></span>
+												</span>
+											</summary>
+											<div class="popover-content padding-none">
+													<button data-page-action-item="overflow-mobile" type="button" class="justify-content-flex-start button-block button-sm has-inner-focus button button-clear display-none-tablet" aria-label="Contents" data-bi-name="contents-expand" data-contents-button="" data-popover-close="">
+														<span class="icon">
+															<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+														</span>
+														<span class="contents-expand-title">Table of contents</span>
+													</button>
+
+												<a id="lang-link-overflow" class="justify-content-flex-start button-sm has-inner-focus button button-clear button-block display-none-tablet" title="Read in English" data-bi-name="language-toggle" data-page-action-item="overflow-mobile" data-check-hidden="true" data-read-in-link="" href="https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification" data-bi="{&quot;cN&quot;:&quot;language-toggle&quot;,&quot;value&quot;:&quot;off&quot;}" hidden="">
+													<span class="icon" aria-hidden="true" data-read-in-link-icon="">
+														<span class="docon docon-locale-globe"></span>
+													</span>
+													<span data-read-in-link-text="">Read in English</span>
+												</a>
+
+													<button type="button" class="collection justify-content-flex-start button button-clear button-sm has-inner-focus button-block display-none-tablet" data-list-type="collection" data-bi-name="collection" title="Add Azure Kinect DK hardware specifications | Microsoft Learn to a collection" data-page-action-item="overflow-mobile" data-check-hidden="true" data-popover-close="" data-pressed="false">
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-circle-addition"></span>
+														</span>
+														<span class="collection-status">Save</span>
+													</button>
+
+													<a data-contenteditbtn="" class="button button-clear button-block button-sm has-inner-focus justify-content-flex-start text-decoration-none display-none-tablet" aria-label="Edit" title="Edit This Document" data-bi-name="edit" href="https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/kinect-dk/hardware-specification.md" data-original_content_git_url="https://github.com/MicrosoftDocs/azure-docs-pr/blob/live/articles/kinect-dk/hardware-specification.md" data-original_content_git_url_template="{repo}/blob/{branch}/articles/kinect-dk/hardware-specification.md" data-pr_repo="" data-pr_branch="">
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-edit-outline"></span>
+														</span>
+														<span>Edit</span>
+													</a>
+
+													<button class="button button-block button-clear button-sm justify-content-flex-start has-inner-focus" title="Print" type="button" aria-label="Print" data-bi-name="print" data-page-action-item="overflow-all" data-popover-close="" data-print-page="" data-check-hidden="true" hidden="">
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-print"></span>
+														</span>
+														<span>Print</span>
+													</button>
+
+													<div aria-hidden="true" class="margin-none display-none-tablet border-top" data-page-action-item="overflow-all"></div>
+
+													
+														<a class="button button-clear button-sm has-inner-focus button-block text-decoration-none justify-content-flex-start share-twitter" data-bi-name="twitter" data-page-action-item="overflow-all" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fkinect-dk%2Fhardware-specification%3FWT.mc_id%3Dtwitter&amp;text=Azure%20Kinect%20DK%20hardware%20specifications%20%7C%20Microsoft%20Learn&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fkinect-dk%2Fhardware-specification%3FWT.mc_id%3Dtwitter">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-twitter"></span>
+															</span>
+															<span>Twitter</span>
+														</a>
+														<a class="button button-clear button-sm has-inner-focus button-block text-decoration-none justify-content-flex-start share-linkedin" data-bi-name="linkedin" data-page-action-item="overflow-all" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fkinect-dk%2Fhardware-specification%3FWT.mc_id%3Dlinkedin">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-linkedin"></span>
+															</span>
+															<span>LinkedIn</span>
+														</a>
+														<a class="button button-clear button-sm button-block has-inner-focus text-decoration-none justify-content-flex-start share-facebook" data-bi-name="facebook" data-page-action-item="overflow-all" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fkinect-dk%2Fhardware-specification%3FWT.mc_id%3Dfacebook">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-facebook"></span>
+															</span>
+															<span>Facebook</span>
+														</a>
+														<a class="button button-clear button-sm button-block has-inner-focus text-decoration-none justify-content-flex-start share-email" data-bi-name="email" data-page-action-item="overflow-all" href="mailto:?subject=%5BShared%20Article%5D%20Azure%20Kinect%20DK%20hardware%20specifications%20%7C%20Microsoft%20Learn&amp;body=Azure%20Kinect%20DK%20hardware%20specifications%20%7C%20Microsoft%20Learn%0A%0Ahttps%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fkinect-dk%2Fhardware-specification%3FWT.mc_id%3Demail">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-mail-message-fill"></span>
+															</span>
+															<span>Email</span>
+														</a>
+												
+											</div>
+										</details>
+										
+									</div>
+								</div>
+							</div>
+							<!-- end article-header -->
+
+
+							<div class="">
+								<button type="button" class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" aria-label="Contents" data-bi-name="contents-expand" data-contents-button="" hidden="">
+									<span class="icon">
+										<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+									</span>
+									<span class="contents-expand-title">Table of contents</span>
+								</button>
+							</div>
+
+							<!-- end mobile-contents button  -->
+
+							<div class="content ">
+
+
+								<h1 id="azure-kinect-dk-hardware-specifications">Azure Kinect DK hardware specifications</h1>
+
+
+									<div class="display-flex justify-content-space-between align-items-center flex-wrap-wrap page-metadata-container">
+										<div class="margin-right-xxs">
+											<ul class="metadata page-metadata" data-bi-name="page info" dir="ltr" lang="en-us">
+													<li>
+Article													</li>
+													<li class="visibility-hidden-visual-diff">
+														<time class="" data-article-date="" aria-label="Article review date" datetime="2022-09-02T17:04:00.000Z" data-article-date-source="git">09/02/2022</time>
+													</li>
+															<li class="readingTime">7 minutes to read</li>
+														<li class="contributors-holder display-none-print">
+															<button aria-label="View all contributors" class="contributors-button link-button" data-bi-name="contributors" title="View all contributors">
+																	12 contributors
+															</button>
+														</li>
+											</ul>
+										</div>
+
+<div id="user-feedback" class="margin-block-xxs display-none-print" data-hide-on-archived="">
+	<button id="user-feedback-button" data-test-id="conceptual-feedback-button" class="button button-sm button-clear button-primary" type="button" data-bi-name="user-feedback-button" data-user-feedback-button="">
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-like"></span>
+		</span>
+		<span>Feedback</span>
+	</button>
+</div>
+									</div>
+
+										<nav id="center-doc-outline" class="doc-outline display-none-print" data-bi-name="intopic toc" role="navigation" aria-label="Article Outline"><!----> 
+		<h2 class="title is-6 margin-block-xs"><!---->In this article<!----></h2>
+		<ol id="content-well-in-this-article-list" class="border-left padding-left-xxs" aria-live="polite" aria-relevant="additions">
+			<!---->
+					<li class="">
+						<a href="#terms"><!---->Terms<!----></a>
+					</li>
+				<!---->
+					<li class="">
+						<a href="#product-dimensions-and-weight"><!---->Product dimensions and weight<!----></a>
+					</li>
+				<!---->
+					<li class="">
+						<a href="#operating-environment"><!---->Operating environment<!----></a>
+					</li>
+				<!---->
+					<li class="">
+						<a href="#depth-camera-supported-operating-modes"><!---->Depth camera supported operating modes<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#color-camera-supported-operating-modes"><!---->Color camera supported operating modes<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#rgb-camera-exposure-time-values"><!---->RGB camera exposure time values<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#depth-sensor-raw-timing"><!---->Depth sensor raw timing<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#camera-field-of-view"><!---->Camera field of view<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#motion-sensor-imu"><!---->Motion sensor (IMU)<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#microphone-array"><!---->Microphone array<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#usb"><!---->USB<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#indicators"><!---->Indicators<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#power-device"><!---->Power device<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#what-does-the-light-mean"><!---->What does the light mean?<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#power-consumption"><!---->Power consumption<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#calibration"><!---->Calibration<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#device-recovery"><!---->Device recovery<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#next-steps"><!---->Next steps<!----></a>
+					</li>
+				<!---->
+		</ol>
+	 
+		<button type="button" aria-expanded="false" data-show-more="" class="link-button font-weight-semibold font-size-sm margin-top-xxs margin-left-xs" aria-controls="content-well-in-this-article-list" data-title="Show 14 more" data-bi-name="show-more-btn">
+			<span class="show-more-text"><!---->Show 14 more<!----></span>
+			
+		</button>
+	 <!----></nav>
+
+								<!-- <content> -->
+									<p>This article provides details about how Azure Kinect 
+hardware integrates Microsoft's latest sensor technology into a single, 
+USB-connected accessory.</p>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/device-wire.png" alt="Azure Kinect DK" data-linktype="relative-path"></p>
+<h2 id="terms" class="heading-anchor"><a class="anchor-link docon docon-link" href="#terms" aria-labelledby="terms"></a>Terms</h2>
+<p>These abbreviated terms are used throughout this article.</p>
+<ul>
+<li>NFOV (Narrow field-of-view depth mode)</li>
+<li>WFOV (Wide field-of-view depth mode)</li>
+<li>FOV (Field-of-view)</li>
+<li>FPS (Frames-per-second)</li>
+<li>IMU (Inertial Measurement Unit)</li>
+<li>FoI (Field of Interest)</li>
+</ul>
+<h2 id="product-dimensions-and-weight" class="heading-anchor"><a class="anchor-link docon docon-link" href="#product-dimensions-and-weight" aria-labelledby="product-dimensions-and-weight"></a>Product dimensions and weight</h2>
+<p>The Azure Kinect device consists of the following size and weight dimensions.</p>
+<ul>
+<li><strong>Dimensions</strong>: 103 x 39 x 126 mm</li>
+<li><strong>Weight</strong>: 440 g</li>
+</ul>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/dimensions.png" alt="Azure Kinect DK dimensions" data-linktype="relative-path"></p>
+<p>A STEP file for the Azure Kinect device is available <a href="https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/assets" data-linktype="external">here</a>.</p>
+<h2 id="operating-environment" class="heading-anchor"><a class="anchor-link docon docon-link" href="#operating-environment" aria-labelledby="operating-environment"></a>Operating environment</h2>
+<p>Azure Kinect DK is intended for developers and commercial businesses operating under the following ambient conditions:</p>
+<ul>
+<li><strong>Temperature</strong>: 10-25<sup>0</sup>C</li>
+<li><strong>Humidity</strong>: 8-90% (non-condensing) Relative Humidity</li>
+</ul>
+<div class="alert is-info">
+<p class="alert-title"><span class="docon docon-status-error-outline" aria-hidden="true"></span> Note</p>
+<p>Use outside of the ambient conditions could cause the device to fail 
+and/or function incorrectly. These ambient conditions are applicable for
+ the environment immediately around the device under all operational 
+conditions. When used with an external enclosure, active temperature 
+control and/or other cooling solutions are recommended to ensure the 
+device is maintained within these ranges. The device design features a 
+cooling channel in between the front section and rear sleeve. When you 
+implement the device, make sure this cooling channel is not obstructed.</p>
+</div>
+<p>Refer to additional product <a href="https://support.microsoft.com/help/4023454/safety-information" data-linktype="external">safety information</a>.</p>
+<h2 id="depth-camera-supported-operating-modes" class="heading-anchor"><a class="anchor-link docon docon-link" href="#depth-camera-supported-operating-modes" aria-labelledby="depth-camera-supported-operating-modes"></a>Depth camera supported operating modes</h2>
+<p>Azure Kinect DK integrates a Microsoft designed 1-Megapixel Time-of-Flight (ToF) depth camera using the <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/ISSCC-2018" data-linktype="absolute-path">image sensor presented at ISSCC 2018</a>. The depth camera supports the modes indicated below:</p>
+<div class="has-inner-focus"><table aria-label="Depth camera supported operating modes" class="table table-sm">
+<thead>
+<tr>
+<th>Mode</th>
+<th>Resolution</th>
+<th>FoI</th>
+<th>FPS</th>
+<th>Operating range*</th>
+<th>Exposure time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFOV unbinned</td>
+<td>640x576</td>
+<td>75°x65°</td>
+<td>0, 5, 15, 30</td>
+<td>0.5 - 3.86 m</td>
+<td>12.8 ms</td>
+</tr>
+<tr>
+<td>NFOV 2x2 binned (SW)</td>
+<td>320x288</td>
+<td>75°x65°</td>
+<td>0, 5, 15, 30</td>
+<td>0.5 - 5.46 m</td>
+<td>12.8 ms</td>
+</tr>
+<tr>
+<td>WFOV 2x2 binned</td>
+<td>512x512</td>
+<td>120°x120°</td>
+<td>0, 5, 15, 30</td>
+<td>0.25 - 2.88 m</td>
+<td>12.8 ms</td>
+</tr>
+<tr>
+<td>WFOV unbinned</td>
+<td>1024x1024</td>
+<td>120°x120°</td>
+<td>0, 5, 15</td>
+<td>0.25 - 2.21 m</td>
+<td>20.3 ms</td>
+</tr>
+<tr>
+<td>Passive IR</td>
+<td>1024x1024</td>
+<td>N/A</td>
+<td>0, 5, 15, 30</td>
+<td>N/A</td>
+<td>1.6 ms</td>
+</tr>
+</tbody>
+</table></div>
+<p>*15% to 95% reflectivity at 850nm, 2.2 μW/cm<sup>2</sup>/nm, random 
+error std. dev. ≤ 17 mm, typical systematic error &lt; 11 mm + 0.1% of 
+distance without multi-path interference. Depth may be provided outside 
+of the operating range indicated above. It depends on an object's 
+reflectivity.</p>
+<h2 id="color-camera-supported-operating-modes" class="heading-anchor"><a class="anchor-link docon docon-link" href="#color-camera-supported-operating-modes" aria-labelledby="color-camera-supported-operating-modes"></a>Color camera supported operating modes</h2>
+<p>Azure Kinect DK includes an OV12A10 12MP CMOS sensor rolling shutter sensor. The native operating modes are listed below:</p>
+<div class="has-inner-focus"><table aria-label="Color camera supported operating modes" class="table table-sm">
+<thead>
+<tr>
+<th>RGB Camera Resolution (HxV)</th>
+<th>Aspect Ratio</th>
+<th>Format Options</th>
+<th>Frame Rates (FPS)</th>
+<th>Nominal FOV (HxV)(post-processed)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3840x2160</td>
+<td>16:9</td>
+<td>MJPEG</td>
+<td>0, 5, 15, 30</td>
+<td>90°x59°</td>
+</tr>
+<tr>
+<td>2560x1440</td>
+<td>16:9</td>
+<td>MJPEG</td>
+<td>0, 5, 15, 30</td>
+<td>90°x59°</td>
+</tr>
+<tr>
+<td>1920x1080</td>
+<td>16:9</td>
+<td>MJPEG</td>
+<td>0, 5, 15, 30</td>
+<td>90°x59°</td>
+</tr>
+<tr>
+<td>1280x720</td>
+<td>16:9</td>
+<td>MJPEG/YUY2/NV12</td>
+<td>0, 5, 15, 30</td>
+<td>90°x59°</td>
+</tr>
+<tr>
+<td>4096x3072</td>
+<td>4:3</td>
+<td>MJPEG</td>
+<td>0, 5, 15</td>
+<td>90°x74.3°</td>
+</tr>
+<tr>
+<td>2048x1536</td>
+<td>4:3</td>
+<td>MJPEG</td>
+<td>0, 5, 15, 30</td>
+<td>90°x74.3°</td>
+</tr>
+</tbody>
+</table></div>
+<p>The RGB camera is USB Video class-compatible and can be used without 
+the Sensor SDK. The RGB camera color space: BT.601 full range [0..255]. 
+The MJPEG <a href="https://en.wikipedia.org/wiki/Chroma_subsampling" data-linktype="external">chroma sub-sampling</a> is 4:2:2.</p>
+<div class="alert is-info">
+<p class="alert-title"><span class="docon docon-status-error-outline" aria-hidden="true"></span> Note</p>
+<p>The Sensor SDK can provide color images in the BGRA pixel format. 
+This is not a native mode supported by the device and causes additional 
+CPU load when used. The host CPU is used to convert from MJPEG images 
+received from the device.</p>
+</div>
+<h2 id="rgb-camera-exposure-time-values" class="heading-anchor"><a class="anchor-link docon docon-link" href="#rgb-camera-exposure-time-values" aria-labelledby="rgb-camera-exposure-time-values"></a>RGB camera exposure time values</h2>
+<p>Below is the mapping for the acceptable RGB camera manual exposure values:</p>
+<div class="has-inner-focus"><table aria-label="RGB camera exposure time values" class="table table-sm">
+<thead>
+<tr>
+<th>exp</th>
+<th>2^exp</th>
+<th>50Hz</th>
+<th>60Hz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-11</td>
+<td>488</td>
+<td>500</td>
+<td>500</td>
+</tr>
+<tr>
+<td>-10</td>
+<td>977</td>
+<td>1250</td>
+<td>1250</td>
+</tr>
+<tr>
+<td>-9</td>
+<td>1953</td>
+<td>2500</td>
+<td>2500</td>
+</tr>
+<tr>
+<td>-8</td>
+<td>3906</td>
+<td>10000</td>
+<td>8330</td>
+</tr>
+<tr>
+<td>-7</td>
+<td>7813</td>
+<td>20000</td>
+<td>16670</td>
+</tr>
+<tr>
+<td>-6</td>
+<td>15625</td>
+<td>30000</td>
+<td>33330</td>
+</tr>
+<tr>
+<td>-5</td>
+<td>31250</td>
+<td>40000</td>
+<td>41670</td>
+</tr>
+<tr>
+<td>-4</td>
+<td>62500</td>
+<td>50000</td>
+<td>50000</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>125000</td>
+<td>60000</td>
+<td>66670</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>250000</td>
+<td>80000</td>
+<td>83330</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>500000</td>
+<td>100000</td>
+<td>100000</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1000000</td>
+<td>120000</td>
+<td>116670</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2000000</td>
+<td>130000</td>
+<td>133330</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="depth-sensor-raw-timing" class="heading-anchor"><a class="anchor-link docon docon-link" href="#depth-sensor-raw-timing" aria-labelledby="depth-sensor-raw-timing"></a>Depth sensor raw timing</h2>
+<div class="has-inner-focus"><table aria-label="Depth sensor raw timing" class="table table-sm">
+<thead>
+<tr>
+<th>Depth Mode</th>
+<th>IR <br>Pulses</th>
+<th>Pulse <br>Width</th>
+<th>Idle <br>Periods</th>
+<th>Idle Time</th>
+<th>Exposure <br> Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFOV Unbinned <br>  NFOV 2xx Binned <br> WFOV 2x2 Binned</td>
+<td>9</td>
+<td>125 us</td>
+<td>8</td>
+<td>1450 us</td>
+<td>12.8 ms</td>
+</tr>
+<tr>
+<td>WFOV Unbinned</td>
+<td>9</td>
+<td>125 us</td>
+<td>8</td>
+<td>2390 us</td>
+<td>20.3 ms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="camera-field-of-view" class="heading-anchor"><a class="anchor-link docon docon-link" href="#camera-field-of-view" aria-labelledby="camera-field-of-view"></a>Camera field of view</h2>
+<p>The next image shows the depth and RGB camera field-of-view, or the 
+angles that the sensors "see". This diagram shows the RGB camera in a 
+4:3 mode.</p>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/camera-fov.png" alt="Camera FOV" data-linktype="relative-path"></p>
+<p>This image demonstrates the camera's field-of-view as seen from the front at a distance of 2000 mm.</p>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/fov-front.png" alt="Camera FOV Front" data-linktype="relative-path"></p>
+<div class="alert is-info">
+<p class="alert-title"><span class="docon docon-status-error-outline" aria-hidden="true"></span> Note</p>
+<p>When depth is in NFOV mode, the RGB camera has better pixel overlap in 4:3 than 16:9 resolutions.</p>
+</div>
+<h2 id="motion-sensor-imu" class="heading-anchor"><a class="anchor-link docon docon-link" href="#motion-sensor-imu" aria-labelledby="motion-sensor-imu"></a>Motion sensor (IMU)</h2>
+<p>The embedded Inertial Measurement Unit (IMU) is an LSM6DSMUS and 
+includes both an accelerometer and a gyroscope. The accelerometer and 
+gyroscope are simultaneously sampled at 1.6 kHz. The samples are 
+reported to the host at a 208 Hz.</p>
+<h2 id="microphone-array" class="heading-anchor"><a class="anchor-link docon docon-link" href="#microphone-array" aria-labelledby="microphone-array"></a>Microphone array</h2>
+<p>Azure Kinect DK embeds a high-quality, seven microphone circular 
+array that identifies as a standard USB audio class 2.0 device. All 7 
+channels can be accessed. The performance specifications are:</p>
+<ul>
+<li>Sensitivity: -22 dBFS (94 dB SPL, 1 kHz)</li>
+<li>Signal to noise ratio &gt; 65 dB</li>
+<li>Acoustic overload point: 116 dB</li>
+</ul>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/mic-bubble.png" alt="Microphone bubble" data-linktype="relative-path"></p>
+<h2 id="usb" class="heading-anchor"><a class="anchor-link docon docon-link" href="#usb" aria-labelledby="usb"></a>USB</h2>
+<p>Azure Kinect DK is a USB3 composite device that exposes the following hardware endpoints to the operating system:</p>
+<p>Vendor ID is 0x045E (Microsoft). Product ID table is shown below:</p>
+<div class="has-inner-focus"><table aria-label="USB" class="table table-sm">
+<thead>
+<tr>
+<th>USB Interface</th>
+<th>PNP IP</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB3.1 Gen2 Hub</td>
+<td>0x097A</td>
+<td>The   main hub</td>
+</tr>
+<tr>
+<td>USB2.0 Hub</td>
+<td>0x097B</td>
+<td>HS   USB</td>
+</tr>
+<tr>
+<td>Depth camera</td>
+<td>0x097C</td>
+<td>USB3.0</td>
+</tr>
+<tr>
+<td>Color camera</td>
+<td>0x097D</td>
+<td>USB3.0</td>
+</tr>
+<tr>
+<td>Microphones</td>
+<td>0x097E</td>
+<td>HS   USB</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="indicators" class="heading-anchor"><a class="anchor-link docon docon-link" href="#indicators" aria-labelledby="indicators"></a>Indicators</h2>
+<p>The device has a camera streaming indicator on the front of the 
+device that can be disabled programmatically using the Sensor SDK.</p>
+<p>The status LED behind the device indicates device state:</p>
+<div class="has-inner-focus"><table aria-label="Indicators" class="table table-sm">
+<thead>
+<tr>
+<th>When the light is</th>
+<th>It means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solid white</td>
+<td>Device is on and working properly.</td>
+</tr>
+<tr>
+<td>Flashing white</td>
+<td>Device is on but doesn't have a USB 3.0 data connection.</td>
+</tr>
+<tr>
+<td>Flashing amber</td>
+<td>Device doesn't have enough power to operate.</td>
+</tr>
+<tr>
+<td>Amber flashing white</td>
+<td>Firmware update or recovery in progress</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="power-device" class="heading-anchor"><a class="anchor-link docon docon-link" href="#power-device" aria-labelledby="power-device"></a>Power device</h2>
+<p>The device can be powered in two ways:</p>
+<ol>
+<li>Using the in-box power supply. The power connector is a 4.5mm OD with 3.0mm ID and a pin diameter of 0.6mm.</li>
+<li>Using a Type-C to Type-C cable for both power and data.</li>
+</ol>
+<p>A Type-C to Type-C cable isn't included with the Azure Kinect DK.</p>
+<div class="alert is-info">
+<p class="alert-title"><span class="docon docon-status-error-outline" aria-hidden="true"></span> Note</p>
+<ul>
+<li>The in-box power supply cable is a USB Type-A to single post barrel 
+connector. Use the provided wall-power supply with this cable. The 
+device is capable of drawing more power than two standard USB Type-A 
+ports can provide.</li>
+<li>USB cables do matter and we recommended to use high-quality cables and verify functionality before deploying the unit remotely.</li>
+</ul>
+</div>
+<div class="alert is-success">
+<p class="alert-title"><span class="docon docon-lightbulb" aria-hidden="true"></span> Tip</p>
+<p>To select a good Type-C to Type-C cable:</p>
+<ul>
+<li>The <a href="https://www.usb.org/products" data-linktype="external">USB certified cable</a> must support both power and data.</li>
+<li>A passive cable should be less than 1.5m in length. If longer, use an active cable.</li>
+<li>The cable needs to support at least 1.5A. Otherwise you need to connect an external power supply.</li>
+</ul>
+</div>
+<p>Verify cable:</p>
+<ul>
+<li><p>Connect device via the cable to the host PC.</p>
+</li>
+<li><p>Validate that all devices enumerate correctly in Windows device 
+manager. Depth and RGB camera should appear as shown in the example 
+below.</p>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/device-manager.png" alt="Azure Kinect DK in Device Manager" data-linktype="relative-path"></p>
+</li>
+<li><p>Validate that cable can stream reliably on all sensors in the Azure Kinect Viewer, with the  following settings:</p>
+<ul>
+<li>Depth camera: NFOV unbinned</li>
+<li>RGB Camera: 2160p</li>
+<li>Microphones and IMU enabled</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-does-the-light-mean" class="heading-anchor"><a class="anchor-link docon docon-link" href="#what-does-the-light-mean" aria-labelledby="what-does-the-light-mean"></a>What does the light mean?</h2>
+<p>The power indicator is an LED on the back of your Azure Kinect DK. 
+The color of the LED changes depending on the status of your device.</p>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/azure-kinect-dk-power-indicator.png" alt="The image shows the back of the Azure Kinect DK. There are three numbered callouts: one for an LED indicator, and below it, two for cables." data-linktype="relative-path"></p>
+<p>This figure labels the following components:</p>
+<ol>
+<li>Power indicator</li>
+<li>Power cable (connected&nbsp;to the power source)</li>
+<li>USB-C data cable (connected to the PC)</li>
+</ol>
+<p>Make sure that the cables are connected as shown. Then check the 
+following table to learn what the various states of the power 
+light&nbsp;indicate.</p>
+<div class="has-inner-focus"><table aria-label="Table 7" class="table table-sm">
+<thead>
+<tr>
+<th>When the light is:</th>
+<th>It means that:</th>
+<th>And you should:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solid white</td>
+<td>The device is powered on and working correctly.</td>
+<td>Use the device.</td>
+</tr>
+<tr>
+<td>Not lit</td>
+<td>The device is not connected to the PC.</td>
+<td>Make sure that the round power connector cable is connected to the device and to the USB power adapter.<br><br>Make sure that the USB-C cable is connected to the device and to your PC.</td>
+</tr>
+<tr>
+<td>Flashing white</td>
+<td>The device is powered on but doesn't have a USB 3.0 data connection.</td>
+<td>Make sure that the round power connector cable is connected to the device and to the USB power adapter.<br><br>Make sure that the USB-C cable is connected to the device and to a USB 3.0 port on your PC.<br><br>Connect the device to a different USB 3.0 port on the PC.<br><br>On your PC, open Device Manager (<strong>Start</strong> &gt; <strong>Control Panel</strong> &gt; <strong>Device Manager</strong>), and verify that your PC has a&nbsp;supported USB 3.0 host controller.</td>
+</tr>
+<tr>
+<td>Flashing amber</td>
+<td>The device doesn't have enough power to operate.</td>
+<td>Make sure that the round power connector cable is connected to the device and to the USB power adapter.<br><br>Make sure that the USB-C cable is connected to the device and to your PC.</td>
+</tr>
+<tr>
+<td>Amber, then flashing white</td>
+<td>The device is powered on and is receiving a firmware update, or the device is restoring the factory settings.</td>
+<td>Wait for the power indicator light to become solid white. For more information, see <a href="https://learn.microsoft.com/en-us/azure/kinect-dk/reset-azure-kinect-dk" data-linktype="relative-path">Reset Azure Kinect DK</a>.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="power-consumption" class="heading-anchor"><a class="anchor-link docon docon-link" href="#power-consumption" aria-labelledby="power-consumption"></a>Power consumption</h2>
+<p>Azure Kinect DK consumes up to 5.9 W; specific power consumption is use-case dependent.</p>
+<h2 id="calibration" class="heading-anchor"><a class="anchor-link docon docon-link" href="#calibration" aria-labelledby="calibration"></a>Calibration</h2>
+<p>Azure Kinect DK is calibrated at the factory. The calibration 
+parameters for visual and inertial sensors may be queried 
+programmatically through the Sensor SDK.</p>
+<h2 id="device-recovery" class="heading-anchor"><a class="anchor-link docon docon-link" href="#device-recovery" aria-labelledby="device-recovery"></a>Device recovery</h2>
+<p>Device firmware can be reset to original firmware using button underneath the lock pin.</p>
+<p><img src="Azure%20Kinect%20DK%20hardware%20specifications%20Microsoft%20Learn_files/recovery.png" alt="Azure Kinect DK recovery button" data-linktype="relative-path"></p>
+<p>To recover the device, see <a href="https://learn.microsoft.com/en-us/azure/kinect-dk/reset-azure-kinect-dk" data-linktype="relative-path">instructions here</a>.</p>
+<h2 id="next-steps" class="heading-anchor"><a class="anchor-link docon docon-link" href="#next-steps" aria-labelledby="next-steps"></a>Next steps</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/kinect-dk/about-sensor-sdk" data-linktype="relative-path">Use Azure Kinect Sensor SDK</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/kinect-dk/set-up-azure-kinect-dk" data-linktype="relative-path">Set up hardware</a></li>
+</ul>
+
+							</div>
+
+							<div id="assertive-live-region" role="alert" aria-live="assertive" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<div id="polite-live-region" role="status" aria-live="polite" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<!-- </content> -->
+
+						</main>
+
+
+
+
+						<!-- recommendations section -->
+							<section id="recommendations-section" data-bi-name="recommendations" class="display-none-print"></section>
+						<!-- end recommendations section -->
+
+						<!-- feedback section -->
+<section class="feedback-section position-relative" data-bi-name="feedback-section">
+    <h2 id="feedback" class="title is-3 margin-top-sm">Feedback</h2>
+
+    <div class="alert choose-feedback-type">
+        <p id="send-feedback-about">Submit and view feedback for</p>
+
+        <div class="choose-feedback-buttons margin-top-xs">
+                <a class="button has-external-link-indicator feedback-type-product margin-bottom-xxs" aria-label="Send feedback about this product" href="https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4" data-bi-name="product-feedback">
+                    <span>This product</span>
+                </a>
+
+			<a class="button feedback-type-product margin-bottom-xxs github-link" aria-label="Send feedback about this page" data-bi-name="create-issue-on-github" href="https://github.com/MicrosoftDocs/azure-docs/issues/new?title=&amp;body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20learn.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20a69b3704-f4a2-cd9d-6125-5b3eb50bd351%0A*%20Version%20Independent%20ID%3A%20a0b9cae2-0c73-7350-d0b1-fb7f4408388d%0A*%20Content%3A%20%5BAzure%20Kinect%20DK%20hardware%20specifications%5D(https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fkinect-dk%2Fhardware-specification)%0A*%20Content%20Source%3A%20%5Barticles%2Fkinect-dk%2Fhardware-specification.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fazure-docs%2Fblob%2Fmain%2Farticles%2Fkinect-dk%2Fhardware-specification.md)%0A*%20Service%3A%20**azure-kinect-developer-kit**%0A*%20GitHub%20Login%3A%20%40qm13%0A*%20Microsoft%20Alias%3A%20**quentinm**">
+				<span aria-hidden="true" class="docon docon-brand-github padding-right-xxs"></span>
+				<span>This page</span>
+			</a>
+        </div>
+    </div>
+
+    <div class="action-container display-flex justify-content-flex-end margin-block-xxs">
+        <a class="view-on-github has-external-link-indicator" data-bi-name="view-on-github" href="https://github.com/MicrosoftDocs/azure-docs/issues?utf8=%E2%9C%93&amp;q=%22a0b9cae2-0c73-7350-d0b1-fb7f4408388d%22&amp;in=body">
+            <span aria-hidden="true" class="docon docon-brand-github"></span>
+            <span>View all page feedback</span>
+        </a>
+    </div>
+</section>
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+							<div id="additional-resources-mobile" role="complementary" aria-label="Additional resources" class="display-none-desktop">
+								<hr class="hr">
+								<h2 id="additional-resources-mobile-heading" class="title is-3">Additional resources</h2>
+									<section id="right-rail-recommendations-mobile" data-bi-name="recommendations"><!---->
+		<hr class="hr display-none display-block-desktop">
+		<article class="margin-top-md margin-top-sm-desktop">
+			
+		<p class="font-weight-semibold font-size-md display-flex align-items-center">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-book-art64"></span>
+			</span>
+			Documentation
+		</p>
+	
+			<div class="margin-top-xs ">
+				
+		<ul aria-live="polite" aria-relevant="additions" id="right-rail-recommendations-list-0">
+			<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/sensor-sdk-download?source=recommendations" data-bi-name="right-rail-recommendation-item-0">
+				Azure Kinect Sensor SDK download
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Learn how to download and install the Azure Kinect Sensor SDK on Windows and Linux.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-download?source=recommendations" data-bi-name="right-rail-recommendation-item-1">
+				Azure Kinect Body Tracking SDK download
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand how to download each version of the Azure Kinect Sensor SDK on Windows or Linux.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-setup?source=recommendations" data-bi-name="right-rail-recommendation-item-2">
+				Quickstart - Set up Azure Kinect body tracking
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			In this quickstart, you will set up the body tracking SDK for Azure Kinect.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/set-up-azure-kinect-dk?source=recommendations" data-bi-name="right-rail-recommendation-item-3">
+				Quickstart- Set up Azure Kinect DK
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			This quickstart provides instructions about how to set up Azure Kinect DK hardware
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/depth-camera?source=recommendations" data-bi-name="right-rail-recommendation-item-4">
+				Azure Kinect DK depth camera
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand the operating principles and key features of the depth camera in your Azure Kinect DK.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-joints?source=recommendations" data-bi-name="right-rail-recommendation-item-5">
+				Azure Kinect body tracking joints
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand the body frame, joints, joint coordinates, and joint hierarchy in the Azure Kinect DK.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/azure-kinect-recorder?source=recommendations" data-bi-name="right-rail-recommendation-item-6">
+				Azure Kinect DK recorder
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand how to record data streams from the sensor SDK to a file using the Azure Kinect recorder.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/azure-kinect-viewer?source=recommendations" data-bi-name="right-rail-recommendation-item-7">
+				Azure Kinect Viewer
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand how to visualize all device data streams using the Azure Kinect viewer.
+		</p>
+	
+						</li>
+					<!---->
+		</ul>
+	
+			</div>
+			<!---->
+				
+		<button type="button" aria-expanded="false" data-show-more="" class="link-button font-weight-semibold font-size-sm margin-top-xs" aria-controls="right-rail-recommendations-list-0" data-title="Show 5 more" data-bi-name="show-more-btn">
+			<span class="show-more-text"><!---->Show 5 more<!----></span>
+			
+		</button>
+	
+		  <!---->
+		</article>
+	<!----></section>
+								<section id="right-rail-learning-resources-mobile" data-bi-name="learning-resources-card" hidden=""></section>
+								<section id="right-rail-events-mobile" data-bi-name="events-card" hidden=""></section>
+								<section id="right-rail-qna-mobile" data-bi-name="qna-link-card" hidden=""></section>
+							</div>
+
+						<div class="border-top is-visible-interactive has-default-focus margin-top-sm ">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+	<div class="display-flex is-full-height padding-right-lg-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link button button-clear flex-shrink-0" href="https://learn.microsoft.com/en-us/locale?target=https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification" data-bi-name="select-locale" aria-label="Content language selector. Currently set to English (United States).">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text">English (United States)</span></a>
+		<div class="margin-inline-xs flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu-interactive" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light margin-right-xxs">
+						<span class="theme-selector-icon css-variable-support border display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+Light					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden=""></li>
+				<li><a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/previous-versions/" data-bi-name="archivelink">Previous Versions</a></li>
+				<li><a data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">Blog</a></li>
+				<li><a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/contribute/" data-bi-name="contributorGuide">Contribute</a></li>
+					<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy</a></li>
+				<li><a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+				<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>© Microsoft 2022</li>
+	</ul>
+</footer>
+						</div>
+
+					</div>
+
+						<div id="additional-resources" class="right-container column is-4-desktop display-none display-block-desktop" data-bi-name="pageactions" role="complementary" aria-label="Additional resources">
+							<div id="affixed-right-container" class="margin-top-sm-tablet" data-bi-name="right-column">
+								<h2 id="additional-resources-heading" class="title is-6 margin-top-md">Additional resources</h2>
+								<section id="right-rail-events" data-bi-name="events-card" hidden=""></section>
+								<section id="right-rail-learning-resources" data-bi-name="learning-resources-card" hidden=""></section>
+								<section id="right-rail-recommendations" data-bi-name="recommendations"><!---->
+		<hr class="hr display-none display-block-desktop">
+		<article class="margin-top-md margin-top-sm-desktop">
+			
+		<p class="font-weight-semibold font-size-md display-flex align-items-center">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-book-art64"></span>
+			</span>
+			Documentation
+		</p>
+	
+			<div class="margin-top-xs ">
+				
+		<ul aria-live="polite" aria-relevant="additions" id="right-rail-recommendations-list-1">
+			<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/sensor-sdk-download?source=recommendations" data-bi-name="right-rail-recommendation-item-0">
+				Azure Kinect Sensor SDK download
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Learn how to download and install the Azure Kinect Sensor SDK on Windows and Linux.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-download?source=recommendations" data-bi-name="right-rail-recommendation-item-1">
+				Azure Kinect Body Tracking SDK download
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand how to download each version of the Azure Kinect Sensor SDK on Windows or Linux.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-sdk-setup?source=recommendations" data-bi-name="right-rail-recommendation-item-2">
+				Quickstart - Set up Azure Kinect body tracking
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			In this quickstart, you will set up the body tracking SDK for Azure Kinect.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/set-up-azure-kinect-dk?source=recommendations" data-bi-name="right-rail-recommendation-item-3">
+				Quickstart- Set up Azure Kinect DK
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			This quickstart provides instructions about how to set up Azure Kinect DK hardware
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/depth-camera?source=recommendations" data-bi-name="right-rail-recommendation-item-4">
+				Azure Kinect DK depth camera
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand the operating principles and key features of the depth camera in your Azure Kinect DK.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/body-joints?source=recommendations" data-bi-name="right-rail-recommendation-item-5">
+				Azure Kinect body tracking joints
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand the body frame, joints, joint coordinates, and joint hierarchy in the Azure Kinect DK.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/azure-kinect-recorder?source=recommendations" data-bi-name="right-rail-recommendation-item-6">
+				Azure Kinect DK recorder
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand how to record data streams from the sensor SDK to a file using the Azure Kinect recorder.
+		</p>
+	
+						</li>
+					<!---->
+						<li class="padding-none margin-top-xs margin-bottom-none position-relative expandable">
+							
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-md has-line-height-reset stretched-link" href="https://learn.microsoft.com/en-us/azure/kinect-dk/azure-kinect-viewer?source=recommendations" data-bi-name="right-rail-recommendation-item-7">
+				Azure Kinect Viewer
+			</a>
+		</p>
+	
+							
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			Understand how to visualize all device data streams using the Azure Kinect viewer.
+		</p>
+	
+						</li>
+					<!---->
+		</ul>
+	
+			</div>
+			<!---->
+				
+		<button type="button" aria-expanded="false" data-show-more="" class="link-button font-weight-semibold font-size-sm margin-top-xs" aria-controls="right-rail-recommendations-list-1" data-title="Show 5 more" data-bi-name="show-more-btn">
+			<span class="show-more-text"><!---->Show 5 more<!----></span>
+			
+		</button>
+	
+		  <!---->
+		</article>
+	<!----></section>
+								<nav id="side-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="Article Outline" hidden="">
+									<h3>In this article</h3>
+								</nav>
+								<section id="right-rail-qna" class="margin-top-xxs" data-bi-name="qna-link-card" hidden=""></section>
+							</div>
+						</div>
+
+				</div>
+				<!--end of div.columns -->
+
+			</section>
+			<!--end of .primary-holder -->
+
+			<!-- interactive container -->
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+			<!-- end of interactive container -->
+		</div>
+
+	</div>
+	<!--end of .mainContainer -->
+
+	<section class="border-top has-default-focus is-hidden-interactive margin-top-sm ">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+	<div class="display-flex is-full-height padding-right-lg-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link button button-clear flex-shrink-0" href="https://learn.microsoft.com/en-us/locale?target=https://learn.microsoft.com/en-us/azure/kinect-dk/hardware-specification" data-bi-name="select-locale" aria-label="Content language selector. Currently set to English (United States).">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text">English (United States)</span></a>
+		<div class="margin-inline-xs flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light margin-right-xxs">
+						<span class="theme-selector-icon css-variable-support border display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+Light					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden=""></li>
+				<li><a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/previous-versions/" data-bi-name="archivelink">Previous Versions</a></li>
+				<li><a data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">Blog</a></li>
+				<li><a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/contribute/" data-bi-name="contributorGuide">Contribute</a></li>
+					<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy</a></li>
+				<li><a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+				<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>© Microsoft 2022</li>
+	</ul>
+</footer>
+	</section>
+
+	<div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus" tabindex="-1"></div>
+
+
+</body></html>
